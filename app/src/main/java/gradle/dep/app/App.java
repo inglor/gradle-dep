@@ -13,6 +13,7 @@ public class App {
     public static void main(String[] args) {
         LinkedList tokens;
         tokens = split(getMessage());
+        // No guava here!!
         System.out.println(join(tokens));
     }
 }

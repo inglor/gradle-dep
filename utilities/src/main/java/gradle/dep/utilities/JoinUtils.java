@@ -3,6 +3,7 @@
  */
 package gradle.dep.utilities;
 
+import com.google.common.base.Strings;
 import gradle.dep.list.LinkedList;
 
 class JoinUtils {
@@ -15,6 +16,6 @@ class JoinUtils {
             result.append(source.get(i));
         }
 
-        return result.toString();
+        return Strings.nullToEmpty(result.toString());
     }
 }
